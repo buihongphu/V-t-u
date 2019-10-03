@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApplication11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="Ten" Content="Ten" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold" Width="44"/>
+        <Label x:Name="lbl_Thanhtoan" Content="Thanh toan" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,59,0,0"/>
+        <Label x:Name="Sodt" Content="Sodt" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,26,0,0" FontWeight="Bold" Width="44" Height="28"/>
+        <Label x:Name="lbl_Loaive" Content="Loai ve:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,0,0,0" FontWeight="Bold" RenderTransformOrigin="-0.27,0.679"/>
+        <Label x:Name="lbl_Gioitinh" Content="Gioi tinh" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,59,0,0" FontWeight="Bold"/>
+        <Label x:Name="lbl_Quoctich" Content="Quoc tich" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="6,130,0,0"/>
+        <TextBox x:Name="txt_ten" HorizontalAlignment="Left" Height="26" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Margin="58,0,0,0" />
+        <TextBox x:Name="txt_dt" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" Margin="58,31,0,0" />
+        <RadioButton x:Name="Giuongnam" Content="Giuong nam" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,37,0,0" GroupName="nm"/>
+        <RadioButton x:Name="rbn_Ghe" Content="Ghe" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="398,37,0,0" GroupName="nm"/>
+        <RadioButton x:Name="rbn_Nam" Content="Nam" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="6,98,0,0" Width="53" GroupName="nm"/>
+        <RadioButton x:Name="rbn_Nu" Content="NU" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="97,98,0,0" Width="53" GroupName="nm"/>
+        <RadioButton x:Name="rbn_VND" Content="VND" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="250,98,0,0" Width="53" GroupName="nm"/>
+        <RadioButton x:Name="rbn_USD" Content="USD" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="398,98,0,0" Width="53" GroupName="nm"/>
+        <ListBox x:Name="lbx_quoctich" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="95,130,0,0" SelectionChanged="typeSelectionChanged">
+            <ListBoxItem Content="Viet Nam" Selected="ListBoxItem_Selected"/>
+            <ListBoxItem Content="Phap"/>
+            <ListBoxItem Content="Anh"/>
+            <ListBoxItem Content="Canada"/>
+            <ListBoxItem/>
+        </ListBox>
+        <Button x:Name="but_Thoat" Content="Thoat" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="273,191,0,0" Click="but_Thoat_Click"/>
+        <Button x:Name="btnDatve" Content="dat ve" HorizontalAlignment="Left" Height="24" Margin="273,142,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+
+    </Grid>
+</Window>
